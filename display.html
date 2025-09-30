@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vibe Play - Music Player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="player">
+    <h1>🎶 Vibe Play</h1>
+
+    <!-- Song List -->
+    <ul id="songList">
+      <li data-src="songs/song1.mp3">Song 1</li>
+      <li data-src="songs/song2.mp3">Song 2</li>
+      <li data-src="songs/song3.mp3">Song 3</li>
+    </ul>
+
+    <!-- Controls -->
+    <div class="controls">
+      <button id="prev">⏮ Prev</button>
+      <button id="play">▶ Play</button>
+      <button id="pause">⏸ Pause</button>
+      <button id="next">⏭ Next</button>
+    </div>
+
+    <!-- Progress -->
+    <input type="range" id="progress" value="0" max="100">
+
+    <!-- Audio Element -->
+    <audio id="audio"></audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
